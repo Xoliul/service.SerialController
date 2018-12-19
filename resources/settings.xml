@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="32001">
+        <setting label="32002" type="action" action="StopScript(service.SerialController) RunAddon(service.SerialController)"/>
+        <setting label="32003" type="text"   id="port" default="/dev/ttyS0"/>
+    </category>
+    <category label="32004">
+        <setting label="32005" type="number" id="pwmpin" default="12"/>
+        <setting label="32006" type="slider" id="timeout1" default="1" range="0,1,2" option="int" />
+        <setting label="32007" type="slider" id="brightness1" default="25" range="5,1,95" option="int" />
+        <setting label="32008" type="slider" id="timeout2" default="3" range="2,1,10" option="int" />
+        <setting label="32009" type="slider" id="brightness2" default="0" range="0,1,20" option="int" />
+    </category>
+    <category label="32010">
+        <setting label="32012" type="bool" id="doautoshutdown" default="true" />
+        <setting label="32011" type="slider" id="shutdowntime" default="0.5" range="0.25,0.25,24.0" option="float" />
+    </category>
+</settings>
