@@ -96,8 +96,10 @@ class PowerMan():
             self.m_AccPowerON = True
         if l_com == "acc_off":
             self.m_AccPowerON = False
-        if l_com == "togglescreen" or l_com == "standby":
+        if l_com == "togglescreen":
             xbmc.executebuiltin("ActivateScreensaver")
+        if l_com == "standby":
+            xbmc.executebuiltin("Action(Back)")
 
     def AdjustBrightness(self, p_report=False):
         if self.m_FirstIdle and not self.m_SecondIdle:
